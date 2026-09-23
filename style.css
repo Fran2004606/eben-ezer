@@ -110,7 +110,7 @@ img {
   text-align: center;
   background-color: var(--gris-claro);
   border-bottom: 4px solid var(--naranja);
-  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(logo/Imagenhero.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(logo/imagenhero.jpg);
   background-size: cover;
   background-position: center;
   color: var(--blanco);
