@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --naranja: #ED6C1A;
+  --negro: #111111;
+  --blanco: #ffffff;
+  --amarillo: #FFD400;
+  --verde-whatsapp: #25D366;
+  --rojo-emergencia: #E63946;
+  --gris-claro: #f4f4f4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--negro);
+  line-height: 1.5;
+  background-color: var(--blanco);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+            /* =====
+            HEADER
+            ========*/
+.header-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--blanco);
+  border-bottom: 2px solid var(--negro);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo img {
+  height: 36px;
+  width: auto;
+}
+
+.header-principal nav {
+  display: none; 
+}
+ 
+.boton-llamada:hover{
+    transform: scale(1.05);
+}
+
+.boton-whatsapp:hover{
+    transform: scale(1.05);
+}
+
+.boton-whatsapp,
+.boton-llamada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  min-height: 48px; 
+  border: 2px solid var(--negro);
+  
+}
+
+.boton-whatsapp {
+  background-color: var(--verde-whatsapp);
+  color: var(--blanco);
+}
+
+.boton-llamada {
+  background-color: var(--rojo-emergencia);
+  color: var(--blanco);
+}
+
+.header-principal .boton-whatsapp {
+  padding: 8px 14px;
+  font-size: 14px;
+  min-height: 40px;
+}
+
+            /* =====
+            HERO
+            ===== */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  background-color: var(--gris-claro);
+  border-bottom: 4px solid var(--naranja);
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(logo/Imagenhero.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.hero h1 {
+  font-size: 26px;
+  color: var(--naranja);
+  -webkit-text-stroke: 1px var(--negro);
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+            /* ===========
+            SERVICIOS
+            ========== */
+.servicios {
+  padding: 28px 16px;
+}
+
+.titulo-servicios {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--naranja);
+}
+
+.titulo-servicios::before {
+    content: "";
+    width: 6px;
+    height: 32px;
+    flex-shrink: 0;
+    background: var(--negro);
+    border-radius: 4px;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 12px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+
+}
+
+
+.servicio .preview-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  color: var(--naranja);
+}
+
+.servicio h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+            /* ===
+            NOSOTROS
+            ========= */
+.nosotros {
+    padding: 28px 16px;
+    background-color: var(--gris-claro);
+    border-top: 4px solid var(--naranja);
+}
+
+.titulo-nosotros {
+    font-size: 22px;
+    margin-bottom: 14px;
+    color: var(--naranja);
+}
+
+.nosotros p {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+            /* ===================
+                PARTE DE CONTACTO
+            ================= */
+.contacto {
+  padding: 28px 16px;
+  border-top: 4px solid var(--naranja);
+  border-bottom: 4px solid var(--naranja);
+}
+
+.titulo-contacto {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--naranja);
+}
+
+.contacto-info p {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.contacto-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mapa h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.mapa p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+  margin-top: 12px;
+  border: 2px solid var(--negro);
+}
+
+        /* ==============
+        CARRUSEL DE FOTOS 
+        ====================*/
+.carrusel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 8px 16px 16px;
+}
+
+.carrusel img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  filter: contrast(1.05) saturate(1.05);
+  border: 1px solid #ddd;
+}
+
+                /* ===============
+                Tabblets y compus
+                ======================*/
+@media (min-width: 768px) {
+
+  .header-principal nav {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+  }
+
+  .hero-botones,
+  .contacto-botones {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .boton-whatsapp,
+  .boton-llamada {
+    flex: 0 0 auto;
+    min-width: 220px;
+  }
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .titulo-servicios {
+    grid-column: 1 / -1;
+  }
+
+  .mapa iframe {
+    height: 350px;
+  }
+}
