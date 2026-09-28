@@ -9,9 +9,10 @@
   --negro: #111111;
   --blanco: #ffffff;
   --amarillo: #FFD400;
-  --verde-whatsapp: #25D366;
-  --rojo-emergencia: #E63946;
+  --verde-whatsapp: #53ca7f;
+  --rojo-emergencia: #aa3942;
   --gris-claro: #f4f4f4;
+  --gris: #e7e7e7;
 }
 
 body {
@@ -35,9 +36,6 @@ img {
   display: block;
 }
 
-            /* =====
-            HEADER
-            ========*/
 .header-principal {
   display: flex;
   align-items: center;
@@ -55,15 +53,15 @@ img {
 }
 
 .header-principal nav {
-  display: none; 
-}
- 
-.boton-llamada:hover{
-    transform: scale(1.05);
+  display: none;
 }
 
-.boton-whatsapp:hover{
-    transform: scale(1.05);
+.boton-llamada:hover {
+  transform: scale(1.05);
+}
+
+.boton-whatsapp:hover {
+  transform: scale(1.05);
 }
 
 .boton-whatsapp,
@@ -76,9 +74,8 @@ img {
   font-size: 16px;
   padding: 14px 18px;
   border-radius: 10px;
-  min-height: 48px; 
-  border: 2px solid var(--negro);
-  
+  min-height: 48px;
+  border: 1px solid var(--negro);
 }
 
 .boton-whatsapp {
@@ -91,26 +88,42 @@ img {
   color: var(--blanco);
 }
 
+.boton-trabajos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  min-height: 48px;
+  border: 1px solid var(--negro);
+  background-color: #C8663A;
+}
+
+.boton-trabajos:hover{
+  transform: scale(1.05);
+}
+
+
 .header-principal .boton-whatsapp {
   padding: 8px 14px;
   font-size: 14px;
   min-height: 40px;
 }
 
-            /* =====
-            HERO
-            ===== */
-
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 63vh;
   text-align: center;
   background-color: var(--gris-claro);
   border-bottom: 4px solid var(--naranja);
-  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(Logo/imagenhero.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(img/local/imagenlocal.png);
+
   background-size: cover;
   background-position: center;
   color: var(--blanco);
@@ -118,9 +131,9 @@ img {
 
 .hero h1 {
   font-size: 26px;
-  color: var(--naranja);
-  -webkit-text-stroke: 1px var(--negro);
+  color: #C8663A;
   margin-bottom: 10px;
+
 }
 
 .hero p {
@@ -134,11 +147,12 @@ img {
   gap: 12px;
 }
 
-            /* ===========
-            SERVICIOS
-            ========== */
 .servicios {
   padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  
 }
 
 .titulo-servicios {
@@ -153,12 +167,12 @@ img {
 }
 
 .titulo-servicios::before {
-    content: "";
-    width: 6px;
-    height: 32px;
-    flex-shrink: 0;
-    background: var(--negro);
-    border-radius: 4px;
+  content: "";
+  width: 6px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--negro);
+  border-radius: 4px;
 }
 
 .servicio {
@@ -166,13 +180,9 @@ img {
   align-items: center;
   gap: 14px;
   padding: 14px 12px;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-
 
 .servicio .preview-icon {
   flex-shrink: 0;
@@ -186,33 +196,39 @@ img {
   font-weight: 500;
 }
 
-            /* ===
-            NOSOTROS
-            ========= */
 .nosotros {
-    padding: 28px 16px;
-    background-color: var(--gris-claro);
-    border-top: 4px solid var(--naranja);
+  padding: 28px 16px;
+  background-color: var(--gris-claro);
+  border-top: 4px solid var(--naranja);
 }
 
 .titulo-nosotros {
-    font-size: 22px;
-    margin-bottom: 14px;
-    color: var(--naranja);
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--naranja);
 }
 
 .nosotros p {
-    font-size: 15px;
-    margin-bottom: 12px;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
 
-            /* ===================
-                PARTE DE CONTACTO
-            ================= */
+.nosotros-lateral {
+  display: none;
+}
+
 .contacto {
   padding: 28px 16px;
   border-top: 4px solid var(--naranja);
   border-bottom: 4px solid var(--naranja);
+  background-color: var(--gris-claro);
+}
+
+.contacto-info{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  background-color: #e7e7e7;
 }
 
 .titulo-contacto {
@@ -233,6 +249,10 @@ img {
   margin-bottom: 24px;
 }
 
+.mapa {
+  margin-top: 20px;
+}
+
 .mapa h3 {
   font-size: 18px;
   margin-bottom: 6px;
@@ -251,11 +271,8 @@ img {
   border: 2px solid var(--negro);
 }
 
-        /* ==============
-        CARRUSEL DE FOTOS 
-        ====================*/
 .carrusel {
-  display: flex;
+  display: none;
   gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -273,9 +290,19 @@ img {
   border: 1px solid #ddd;
 }
 
-                /* ===============
-                Tabblets y compus
-                ======================*/
+.footer {
+  background-color: rgb(104, 103, 103);
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.yo{
+  font-size: 5px;
+}
+
+
 @media (min-width: 768px) {
 
   .header-principal nav {
@@ -306,7 +333,79 @@ img {
     grid-column: 1 / -1;
   }
 
+  .nosotros {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .nosotros-texto {
+    flex: 1;
+  }
+
+  .nosotros-lateral {
+    display: block;
+    flex: 1;
+  }
+
+  .nosotros-foto {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+    margin-bottom: 16px;
+  }
+
+  .titulo-trabajos {
+    margin-bottom: 10px;
+    color: var(--naranja);
+  }
+
+  .carrusel {
+    display: flex;
+  }
+
+ .contacto {
+    padding: 28px 16px;
+    border-top: 4px solid var(--naranja);
+    border-bottom: 4px solid var(--naranja);
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .texto-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+  }
+
+  .contacto-info {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-botones {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa{
+    flex: 1;
+    margin-left: 20px;
+  }
+
   .mapa iframe {
     height: 350px;
+    width: 100%;
   }
 }
