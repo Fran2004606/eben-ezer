@@ -9,8 +9,8 @@
   --negro: #111111;
   --blanco: #ffffff;
   --amarillo: #FFD400;
-  --verde-whatsapp: #29ca64;
-  --rojo-emergencia: #b4202d;
+  --verde-whatsapp: #1ccc5d;
+  --rojo-emergencia: #a81f2a;
   --gris-claro: #f4f4f4;
   --gris: #e7e7e7;
 }
@@ -103,7 +103,7 @@ img {
   border-radius: 10px;
   min-height: 48px;
   border: 1px solid var(--negro);
-  background-color: #C8663A;
+  background-color: #cc5b26;
 }
 
 .boton-trabajos:hover {
