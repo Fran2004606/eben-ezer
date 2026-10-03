@@ -44,7 +44,7 @@
 
                     <a href="tel:+5493462663005" class="boton-llamada">Llamada de emergencia</a>
                     <a href = "https://wa.me/5493462663005?text=Hola%20Hugo%2C%20quiero%20consultar%20por%20un%20turno%20para%20mi%20cami%C3%B3n" class="boton-whatsapp">Consultar turno</a>
-                    <a href="" class="boton-trabajos">Trabajos Realizados</a>
+                    <a href="#" id="btnTrabajos" class="boton-trabajos">Trabajos Realizados</a>
 
                 </div>
             </section>
@@ -93,31 +93,18 @@
                     <p>Nos destacamos por nuestra atención personalizada y nuestro compromiso con la calidad del servicio. Nuestro objetivo es brindar soluciones rápidas y efectivas a nuestros clientes, para que puedan volver a la ruta lo antes posible.</p>
                     <p>Si estás buscando un taller confiable y profesional para reparar tu camión, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
                 </div>
-               <!--
-                <div class="nosotros-lateral">
-                    
-                    <img class= "nosotros-foto" src="img/local/fotodellocal.png" alt="Imagen de nuestro taller">
-                    <h3 class="titulo-trabajos">Trabajos realizados</h3>
-                    <div class="carrusel">
-                        <img src="img/trabajos/trabajo1.png" alt="Trabajo realizado 1">
-                        <img src="img/trabajos/trabajo2.png" alt="Trabajo realizado 2">
-                        <img src="img/trabajos/trabajo3.png" alt="Trabajo realizado 3">
-                        <img src="img/trabajos/trabajo4.png" alt="Trabajo realizado 4">
-                        <img src="img/trabajos/trabajo5.png" alt="Trabajo realizado 5">
-                        <img src="img/trabajos/trabajo6.png" alt="Trabajo realizado 6">
-                    </div>
-                
-                
-                </div>
-                -->
+               
                 
             </section>
 
             <section class="contacto">
 
                 <article class="contacto-info">
-                    <h2 class="titulo-contacto">Contacto</h2>
-                    <p>Si necesitás asistencia en ruta o querés consultar por un turno, no dudes en contactarnos. Estamos disponibles las 24 horas para ayudarte.</p>
+
+                    <div class="texto-contacto">
+                        <h2 class="titulo-contacto">Contacto</h2>
+                        <p>Si necesitás asistencia en ruta o querés consultar por un turno, no dudes en contactarnos. Estamos disponibles las 24 horas para ayudarte.</p>
+                    </div>
                     
                     <div class="contacto-botones">
 
@@ -139,35 +126,55 @@
 
 
 
-            
-
-
-
-
-            
-
-
-
-
-
-
-
-
         </main>
 
-        <footer class="footer">
-           <div class="derechos" >© 2026 Eben-Ezer | Todos los derechos reservados.</div>
-           
-           <div class="yo">Sitio web desarrollado por
-            <a href="https://github.com/Fran2004606" target="_blank">
-            Franco Suarez
-        </a>.
+        <div class="modal-trabajos" id="modalTrabajos">
+            <div class="modal-header">
+                <div class="modal-titulo">    
+                    <h2>Trabajos realizados</h2>
+                    <p>Si querés consultar por un turno, podés hacerlo a través de WhatsApp haciendo click en el botón de abajo.</p>
+                </div>
+                    <button class="modal-cerrar" onclick="document.getElementById('modalTrabajos').classList.remove('activo')">&times;</button>
+            </div>
 
-           </div>
+            <div class="modal-galeria">
+                <img src="img/trabajos/trabajo1.webp" alt="Trabajo realizado 1">
+                <img src="img/trabajos/trabajo2.webp" alt="Trabajo realizado 2">
+                <img src="img/trabajos/trabajo3.webp" alt="Trabajo realizado 3">
+                <img src="img/trabajos/trabajo4.webp" alt="Trabajo realizado 4">
+                <img src="img/trabajos/trabajo5.webp" alt="Trabajo realizado 5">
+                <img src="img/trabajos/trabajo6.webp" alt="Trabajo realizado 6">
+                <img src="img/trabajos/trabajo7.webp" alt="Trabajo realizado 7">
+                <img src="img/trabajos/trabajo8.webp" alt="Trabajo realizado 8">
+                <img src="img/trabajos/trabajo9.webp" alt="Trabajo realizado 9">
+                <img src="img/trabajos/trabajo10.webp" alt="Trabajo realizado 10">
+        
+            </div>
+
+            <div class="modal-botones">
+                
+                <a href="https://wa.me/5493462663005?text=Hola%20Hugo%2C%20quiero%20consultar%20por%20un%20turno%20para%20mi%20cami%C3%B3n" class="modal-whatsapp">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        
+        
+        <footer class="footer">
+            <div class="derechos" >© 2026 Eben-Ezer | Todos los derechos reservados.</div>
+            
+            <div class="yo">Sitio web desarrollado por
+                <a href="https://github.com/Fran2004606" target="_blank">
+                Franco Suarez
+            </a>.
+
+            </div>
         </footer>
 
 
-
+        <script src="script.js"></script>
         
 
         
