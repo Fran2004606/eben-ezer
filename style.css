@@ -5,7 +5,7 @@
 }
 
 :root {
-  --naranja: #ED6C1A;
+  --naranja: #e96d20;
   --negro: #111111;
   --blanco: #ffffff;
   --amarillo: #FFD400;
@@ -133,7 +133,7 @@ img {
 
 .hero h1 {
   font-size: 26px;
-  color: #C8663A;
+   color: #FF6A00;
   margin-bottom: 10px;
 }
 
